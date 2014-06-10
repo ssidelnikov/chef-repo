@@ -22,6 +22,7 @@ SITE
       yum (~> 3.0)
       yum-epel (>= 0.0.0)
     logrotate (1.5.0)
+    monit (0.7.1)
     mysql (5.2.12)
     mysql-chef_gem (0.0.2)
       build-essential (>= 0.0.0)
@@ -41,6 +42,8 @@ SITE
       build-essential (>= 0.0.0)
       git (>= 0.0.0)
       ohai (>= 1.1)
+    redisio (1.7.1)
+      ulimit (>= 0.1.2)
     rsyslog (1.12.2)
     ruby_build (0.8.0)
     runit (1.5.10)
@@ -48,6 +51,7 @@ SITE
       yum (~> 3.0)
       yum-epel (>= 0.0.0)
     sudo (2.6.0)
+    ulimit (0.3.2)
     windows (1.31.0)
       chef_handler (>= 0.0.0)
     xfs (1.1.0)
@@ -81,12 +85,18 @@ PATH
       sudo (> 1.2.0)
 
 PATH
+  remote: vendor/cookbooks/sidekiq
+  specs:
+    sidekiq (0.1.0)
+
+PATH
   remote: vendor/cookbooks/ssh_deploy_keys
   specs:
     ssh_deploy_keys (0.1.0)
 
 DEPENDENCIES
   apt (= 2.4.0)
+  monit (>= 0)
   mysql (= 5.2.12)
   nginx (= 2.7.2)
   packages (>= 0)
@@ -94,7 +104,10 @@ DEPENDENCIES
   postgresql (>= 0)
   rails (>= 0)
   rbenv (= 1.7.1)
+  redisio (>= 0)
   ruby_build (= 0.8.0)
+  runit (>= 0)
+  sidekiq (>= 0)
   ssh_deploy_keys (>= 0)
   sudo (= 2.6.0)
 
