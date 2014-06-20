@@ -1,0 +1,9 @@
+{
+  "id": "1c",
+  "comment": "1C exchange user",
+  "groups": [
+    "deploy"
+  ],
+  "home": "/home/1c",
+  "password": "sbWxS8g9Dy4Rg"
+}

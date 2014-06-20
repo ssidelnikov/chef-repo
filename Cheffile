@@ -15,6 +15,8 @@ cookbook "ruby_build", "0.8.0"
 cookbook "runit"
 cookbook "redisio"
 cookbook "monit"
+cookbook "onddo_proftpd"
+cookbook "user"
 
 # Our own cookbooks from vendor/
 cookbook "packages", path: "vendor/cookbooks/packages"
