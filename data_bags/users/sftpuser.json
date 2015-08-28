@@ -1,0 +1,9 @@
+{
+  "id": "sftpuser",
+  "comment": "D-Apteka FTP user",
+  "groups": [
+    "deploy"
+  ],
+  "home": "/sftp/sftpuser",
+  "password": "Lame!@#^%$FTP"
+}
